@@ -13,8 +13,8 @@ An image gallery application where one can explore, search by leveraging the [Un
 - Deployment: Vercel
 
 ### API Consumed
-- 1) Unsplash Image API for listing and searching
-- 2) Self wriiten api to upload files to S3 bucket
+1) Unsplash Image API for listing and searching
+2) Self wriiten api to upload files to S3 bucket
 
 ### Deployed URL: [https://inifite-scroll-upslash.vercel.app/](https://inifite-scroll-upslash.vercel.app/)
 
