@@ -21,18 +21,27 @@ const Home = () => {
   const fetchImages = async () => {
     const res = await getImages(count);
     setImage([...images, ...res.data]);
-    
   };
 
   return (
     <div className="container mt-5">
-      <div className="d-flex justify-content-end mb-3">
-        <button
-          className="btn btn-dark mb-2"
-          onClick={() => setViewStyle((prevValue) => !prevValue)}
-        >
-          <i className={styles.icon} />
-        </button>
+      <div className="row p-2">
+        <div className="col-9 my-auto">
+          <h4> Explore </h4>
+        </div>
+        <div className="col-3">
+          <div className="d-flex justify-content-end mb-3">
+            <button
+              className="btn btn-dark mb-2"
+              onClick={() => setViewStyle((prevValue) => !prevValue)}
+            >
+              <strong>
+                {" "}
+                <i className={styles.icon} />{" "}
+              </strong>
+            </button>
+          </div>
+        </div>
       </div>
       <InfiniteScroll
         dataLength={images.length}
@@ -40,11 +49,15 @@ const Home = () => {
         hasMore={true}
         loader={<Loader />}
       >
-        <div className={`row d-flex ${styles.row}`}>
+        <div className={`row d-flex ${styles.row} p-2`}>
           {images &&
             images.map((image, idx) => (
               <div className={`${styles.col} mb-3`} key={idx}>
-                <ImageWrapper url={image.urls.regular} createdAt={image.created_at} name={image.user.name}/>
+                <ImageWrapper
+                  url={image.urls.regular}
+                  createdAt={image.created_at}
+                  name={image.user.name}
+                />
               </div>
             ))}
         </div>

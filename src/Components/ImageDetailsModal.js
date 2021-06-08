@@ -24,7 +24,7 @@ const ImageDetailsModal = ({
           <h6 className="modal-title text-start w-100">Credits: {name}</h6>
           <h6 className="modal-title text-start w-100">
             {" "}
-            Click at: {moment(createdAt).format("MMMM Do YYYY, h:mm:ss a")}
+            Clicked At: {moment(createdAt).format("MMMM Do YYYY, h:mm:ss a")}
           </h6>
         </div>
       </div>

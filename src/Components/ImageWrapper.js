@@ -7,7 +7,7 @@ const ImageWrapper = ({ url, name, createdAt }) => {
   return (
     <Fragment>
       <img
-        className="image w-100"
+        className="image w-100 cursor-pointer"
         src={url}
         alt=""
         onClick={() => setModalStatus(true)}

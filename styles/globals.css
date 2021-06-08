@@ -37,6 +37,10 @@ a {
   width: 0px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /************ MODAL WINDOW STYLES ****************/
 
 .ReactModal__Overlay {
