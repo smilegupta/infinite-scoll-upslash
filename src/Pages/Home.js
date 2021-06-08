@@ -26,7 +26,7 @@ const Home = () => {
     <div className="container mt-3">
       <div className="row p-2">
         <div className="col-9 my-auto">
-          <h4> Explore Snapshots </h4>
+          <h4 className="text-dark"> Explore Snapshots </h4>
         </div>
         <div className="col-3">
           <div className="d-flex justify-content-end mb-3">
@@ -37,7 +37,7 @@ const Home = () => {
             >
               <strong>
                 {" "}
-                <i className={styles.icon} />{" "}
+                <i className={`${styles.icon}  text-dark`} />{" "}
               </strong>
             </button>
           </div>

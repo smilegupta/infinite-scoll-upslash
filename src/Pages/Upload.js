@@ -82,8 +82,11 @@ const Upload = () => {
     <div className="container mt-3">
       <div className="row mb-3">
         <div className="col-12 text-center mb-2">
-          <h4> Upload Image </h4>
-           Upload Images and get sharable links.
+          <h4 className="text-dark"> Upload Image </h4>
+          <span className="text-dark">
+            {" "}
+            Upload Images and get sharable links
+          </span>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
           <form onSubmit={(e) => handleSubmit(e)}>
@@ -102,7 +105,7 @@ const Upload = () => {
             </div>
             <div className="mb-3 d-flex justify-content-center">
               <button
-                className="btn btn-secondary mx-2 my-2 my-sm-0"
+                className="btn btn-secondary mx-2 my-2 my-sm-0 text-dark"
                 style={{ borderRadius: "10px" }}
                 type="submit"
                 disabled={loading}
@@ -114,7 +117,10 @@ const Upload = () => {
           {S3URL && (
             <div className="mt-4">
               <div className="form-group">
-                <label>
+                <label
+                  style={{ display: "block" }}
+                  className="text-center text-dark"
+                >
                   {" "}
                   Sharable Link{" "}
                   <CopyToClipboard text={S3URL} onCopy={onCopyText}>

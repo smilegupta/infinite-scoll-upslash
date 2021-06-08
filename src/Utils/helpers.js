@@ -7,7 +7,7 @@ export const views = {
 
   list: {
     row: "flex-column",
-    col: "col-12",
+    col: "col-3 mx-auto",
     icon: "las la-border-all",
   },
 };

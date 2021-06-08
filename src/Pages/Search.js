@@ -18,7 +18,7 @@ const Search = () => {
     <div className="container mt-3">
       <div className="row mb-3">
         <div className="col-12 text-center mb-2">
-          <h4> Search Images</h4>
+          <h4 className="text-dark"> Search Images</h4>
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
           <form className="d-flex" onSubmit={(e) => searchingMovie(e)}>
@@ -55,7 +55,7 @@ const Search = () => {
               ))}{" "}
           </>
         ) : (
-          <h6 className="text-center mt-5">
+          <h6 className="text-center mt-5 text-dark">
             {" "}
             No result found, try using someither keywords.{" "}
           </h6>
