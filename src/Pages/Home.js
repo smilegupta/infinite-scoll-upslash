@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { list } from "../Utils/helpers";
 import ImageWrapper from "../Components/ImageWrapper";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Loader from "../Components/Loader";

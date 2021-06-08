@@ -16,6 +16,7 @@ const ImageDetailsModal = ({
       ariaHideApp={false}
     >
       <div className="modal-content">
+      <i className="las la-times cursor-pointer cross-modal" onClick={() => setModalStatus(false)}/>
         <img src={imageUrl} className="w-100" />
         <div
           className="modal-header"

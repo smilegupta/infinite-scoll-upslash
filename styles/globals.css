@@ -41,6 +41,13 @@ a {
   cursor: pointer;
 }
 
+.cross-modal {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: black;
+}
+
 /************ MODAL WINDOW STYLES ****************/
 
 .ReactModal__Overlay {
