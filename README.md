@@ -1,11 +1,14 @@
 ## Image Gallery
-### Features
-- Exploring Images
-- Searching Images
-- Upload Image and Getting Sharable Link
+
+An image gallery application where one can explore, search by leveraging the [Unsplash](https://unsplash.com/) APIs and upload their own images to get a publicly sharable link!
+
+### Current Features
+- Explore images
+- Search images
+- Upload an image and get publicly sharable link for the same
 
 ### Tech Stack
-- Frontend : Nextjs
+- Frontend: Next.js
 - Styling: CSS and Bootstrap
 - Deployment: Vercel
 
