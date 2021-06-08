@@ -1,11 +1,11 @@
 import Navbar from "../src/Components/NavBar";
-import HomePage from "../src/Pages/Home";
+import Search from "../src/Pages/Search";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <HomePage />
+      <Search />
     </div>
   );
 }

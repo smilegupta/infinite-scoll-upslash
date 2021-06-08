@@ -24,10 +24,10 @@ const Home = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-3">
       <div className="row p-2">
         <div className="col-9 my-auto">
-          <h4> Explore </h4>
+          <h4> Explore Snapshots </h4>
         </div>
         <div className="col-3">
           <div className="d-flex justify-content-end mb-3">
