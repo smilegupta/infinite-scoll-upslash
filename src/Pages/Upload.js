@@ -83,6 +83,7 @@ const Upload = () => {
       <div className="row mb-3">
         <div className="col-12 text-center mb-2">
           <h4> Upload Image </h4>
+           Upload Images and get sharable links.
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
           <form onSubmit={(e) => handleSubmit(e)}>
@@ -106,13 +107,13 @@ const Upload = () => {
                 type="submit"
                 disabled={loading}
               >
-                Submit
+                Upload
               </button>
             </div>
           </form>
           {S3URL && (
             <div className="mt-4">
-              <div class="form-group">
+              <div className="form-group">
                 <label>
                   {" "}
                   Sharable Link{" "}
@@ -121,7 +122,7 @@ const Upload = () => {
                   </CopyToClipboard>
                 </label>
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="exampleTextarea"
                   rows="3"
                   readOnly
