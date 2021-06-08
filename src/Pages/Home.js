@@ -33,6 +33,7 @@ const Home = () => {
             <button
               className="btn btn-dark mb-2"
               onClick={() => setViewStyle((prevValue) => !prevValue)}
+              style={{ borderRadius: "10px" }}
             >
               <strong>
                 {" "}
