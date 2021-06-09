@@ -54,6 +54,7 @@ const Home = () => {
             images.map((image, idx) => (
               <div className={`${styles.col} mb-3`} key={idx}>
                 <ImageWrapper
+                  thumb={image.urls.small}
                   url={image.urls.regular}
                   createdAt={image.created_at}
                   name={image.user.name}

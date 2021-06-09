@@ -4,9 +4,9 @@ import { api } from "./axios.config";
 const API_URL = api.s3Upload;
 const UPLOAD_IMAGE = "/upload";
 
-export function uploadImage(uploadImageUrl) {
+export async function uploadImage(uploadImageUrl) {
   const payload = {
     url: uploadImageUrl,
   };
-  return rawAxios.post(API_URL + UPLOAD_IMAGE, payload);
+  return await rawAxios.post(API_URL + UPLOAD_IMAGE, payload);
 }
