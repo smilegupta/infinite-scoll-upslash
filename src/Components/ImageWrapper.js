@@ -1,13 +1,13 @@
 import { useState, Fragment } from "react";
 import ImageDetailsModal from "./ImageDetailsModal";
 
-const ImageWrapper = ({ url, name, createdAt }) => {
+const ImageWrapper = ({ url, name, createdAt, styles }) => {
   // State Variables
   const [modalStatus, setModalStatus] = useState(false);
   return (
     <Fragment>
       <img
-        className="image w-100 cursor-pointer"
+        className={`${styles} cursor-pointer`}
         src={url}
         alt=""
         onClick={() => setModalStatus(true)}

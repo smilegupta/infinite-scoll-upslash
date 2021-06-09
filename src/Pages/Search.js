@@ -50,6 +50,7 @@ const Search = () => {
                     url={image.urls.regular}
                     createdAt={image.created_at}
                     name={image.user.name}
+                    styles="image-grid"
                   />
                 </div>
               ))}{" "}

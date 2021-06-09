@@ -17,14 +17,22 @@ a {
 
 /************ General CSS ****************/
 
-.image {
+.image-grid {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 2px solid #000000;
 }
 
-.image:hover {
+.image-list {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #000000;
+}
+
+.image-grid:hover,
+.image-list:hover {
   transform: scale(1.02);
 }
 

@@ -57,6 +57,7 @@ const Home = () => {
                   url={image.urls.regular}
                   createdAt={image.created_at}
                   name={image.user.name}
+                  styles={styles.image}
                 />
               </div>
             ))}
